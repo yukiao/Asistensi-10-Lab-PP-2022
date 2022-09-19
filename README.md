@@ -18,7 +18,7 @@ _Untuk perintah yang dibungkus < > maka perintah tersebut diganti sesuai instruk
   mkdir <NIM>
   ```
 - Di dalam folder NIM kalian buat folder dengan nama "Pertemuan-<_no_pertemuan_>" tanpa tanda kutip. contoh: Pertemuan-1
-- Di dalam folder pertemuan tersebut, kalian menambahkan file tugas praktikum yang telah kalian kerjakan dengan format nama file "assingment_<_no pertemuan_>_<_no_soal_>.py" tanpa tanda kutip
+- Di dalam folder pertemuan tersebut, kalian menambahkan file tugas praktikum yang telah kalian kerjakan dengan format nama file "assignment_<_no pertemuan_>_<_no_soal_>.py" tanpa tanda kutip
 - Setelah semua file tugas telah diselesaikan dan telah diasistensikan lakukan perintah berikut
   ```
   git add .
