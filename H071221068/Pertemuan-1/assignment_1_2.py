@@ -1,4 +1,3 @@
-import time
 print("Program Konversi Detik Ke Jam")
 
 detik=int(input("masukkan waktu dalam satuan detik : "))
