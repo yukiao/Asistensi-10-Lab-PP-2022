@@ -1,0 +1,9 @@
+from math import pi, tan
+
+h = float(input("masukan tinggi mercusuar :"))
+a = float( input ("masukkan sudut elavasi belakang kapal : "))
+b = float( input ("masukkan sudut elavasi depan kapal : "))
+sudut01 = a*(pi/180)
+sudut02= b*(pi/180)
+c = (tan(sudut01 ) - tan(sudut02))*h
+print (f"{round(c, 1)} m")
