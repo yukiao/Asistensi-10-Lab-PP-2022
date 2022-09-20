@@ -1,16 +1,17 @@
-pemakaian = int(input('Masukkan angka = '))
-# Pemakaian dalam satuan Watt/jam
+import math
 
-#Konversi Wh ke kWh
-kWh = float(pemakaian / 1000)
+h = int (input('Masukkan nilai h = '))
+sudut_a = int (input('Masukkan nilai a = '))
+sudut_b = int (input('Masukkan nilai b = '))
+# Dengan catatan (90>a>b)
 
-tarif = 1325 #/kWh
-tagihan = int(kWh * tarif * 30)
+rad_a = (math.pi/180)*sudut_a
+rad_b = (math.pi/180)*sudut_b
 
-print('Jumlah tagihan listrik bulanan: Rp.', tagihan, '.00', sep = '')
+hasilTan_a = math.tan(rad_a)
+hasilTan_b = math.tan(rad_b)
 
+# Misalkan x = panjang kapal
+x = h*(hasilTan_a - hasilTan_b)
 
-
-
-
-
+print(round(x, 1), 'm')
