@@ -20,9 +20,9 @@ def format_indonesia(nilai):
     return temp_result + "," + before_decimal
 
 
-golongan=(input("Golongan = "))
+golongan=(input("golongan = "))
 daya=float(input("daya = "))
-Pemakaian=float(input("Pemakaian = "))
+pemakaian=float(input("pemakaian = "))
 
 if(golongan=='R1' and daya== 900):
     tarif=1352
@@ -47,5 +47,5 @@ else:
 if (tarif==0):
     print("data tidak valid")
 else:
-    tagihan=tarif*Pemakaian
+    tagihan=tarif*pemakaian
     print("jumlah tagihan anda :",format_indonesia(tagihan))
