@@ -1,0 +1,22 @@
+x = int(input())
+y = int(input())
+if x >= y : 
+    print (f"input salah {x} lebih besar dari {y}")
+else:
+    for a in range (1,y + 1) :
+        print (a, end=" ")
+        if a % x == 0 : 
+            print ()
+        
+    
+
+
+
+
+    
+
+    
+
+
+ 
+    
