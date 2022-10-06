@@ -22,34 +22,20 @@ try:
     harga_barang = int(input('Masukkan harga barang: '))
     jumlah_uang = int(input('Masukkan jumlah uang: '))
     
-    if harga_barang < 0 or jumlah_uang < 0:
+    while harga_barang < 0 or jumlah_uang < 0:
         harga_barang = int(input('Masukkan harga barangnya ga boleh minus ngab: '))
         jumlah_uang = int(input('Masukkan jumlah uang harus lebih dari 0: '))
         if harga_barang < 0 or jumlah_uang < 0:
             print('Batu lu kalau dibilangin')
-        else:
-            kembalian = jumlah_uang - harga_barang
-
-            if jumlah_uang < harga_barang:
-                print('Uang anda tidak mencukupi')
-            else:
-                for pecahan in pecahan_uang:
-                    banyakPecahan = int(kembalian / pecahan)
-                    kembalian = kembalian - (pecahan * banyakPecahan)
-                    print(banyakPecahan, 'uang Rp.', format_indonesia(pecahan))
-except:
-    harga_barang = int(input('Masukkan harga yang bener oi: '))
-    jumlah_uang = int(input('Masukkan jumlah uang jangan ngacolah: '))
-
-    if harga_barang < 0 or jumlah_uang < 0:
-        print('Batu lu kalau dibilangin')
-    else:
+        
         kembalian = jumlah_uang - harga_barang
 
-        if jumlah_uang < harga_barang:
-            print('Uang anda tidak mencukupi')
-        else:
-            for pecahan in pecahan_uang:
-                banyakPecahan = int(kembalian / pecahan)
-                kembalian = kembalian - (pecahan * banyakPecahan)
-                print(banyakPecahan, 'uang Rp.', format_indonesia(pecahan))
+    if jumlah_uang < harga_barang:
+        print('Uang anda tidak mencukupi')
+    else:
+        for pecahan in pecahan_uang:
+            banyakPecahan = int(kembalian / pecahan)
+            kembalian = kembalian - (pecahan * banyakPecahan)
+            print(banyakPecahan, 'uang Rp.', format_indonesia(pecahan))
+except:
+    print('Inputan harus berupa bilangan bulat positif yang lebih dari 0')
