@@ -1,8 +1,8 @@
 import math
 
-h = int (input('Masukkan nilai h = '))
-sudut_a = int (input('Masukkan nilai a = '))
-sudut_b = int (input('Masukkan nilai b = '))
+h = float (input('Masukkan nilai h = '))
+sudut_a = float (input('Masukkan nilai a = '))
+sudut_b = float (input('Masukkan nilai b = '))
 # Dengan catatan (90>a>b)
 
 rad_a = (math.pi/180)*sudut_a
