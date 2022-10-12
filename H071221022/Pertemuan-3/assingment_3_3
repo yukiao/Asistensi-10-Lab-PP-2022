@@ -22,4 +22,4 @@ try :
     elif x == y : 
         print ("uang anda pas")
 except : 
-    print (input("Input haris angka "))
+    print (("Input haris angka "))
