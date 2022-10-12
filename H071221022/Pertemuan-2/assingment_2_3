@@ -1,5 +1,4 @@
-try : 
-    bil1, bil2, bil3, bil4, bil5 = (input().split())
+def perhitungan_tipe_angka (bil1, bil2, bil3, bil4, bil5) :
     x = bil1.replace("-","")
     y = bil2.replace("-","")
     z = bil3.replace("-","")
@@ -25,7 +24,11 @@ try :
         tipe_angka = 0
         for x in (s) : 
             if x < 0 :
-                tipe_angka = tipe_angka + 1        
-    print( f"{tipe_angka} Angka negatif" )
+                tipe_angka = tipe_angka + 1
+        return tipe_angka
+try : 
+    bil1, bil2, bil3, bil4, bil5 = (input().split())
+    x = perhitungan_tipe_angka (bil1, bil2, bil3, bil4, bil5)
+    print( f"{x} Angka negatif" )
 except : 
     print ("Input tidak valid ")
