@@ -1,0 +1,18 @@
+def detail_umur (hari): 
+        tahun = hari / 365
+        bulan = ((tahun)*365-int(tahun)*365)/30
+        hari =  ((bulan)*30-(int(bulan))*30)
+        print (f"{int(tahun)} tahun")
+        print (f"{int(bulan)} bulan")
+        print (f"{int(hari)} hari")
+hari = (input())
+if hari.isnumeric() :
+    hari = int(hari)
+    detail_umur(hari)
+else : 
+    print ("Input Harus Berupa Angka ")
+
+
+
+
+    
