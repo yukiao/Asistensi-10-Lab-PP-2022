@@ -1,13 +1,18 @@
-Nilai = float (input ("masukan nial : "))
-if Nilai >= 90 : 
-    print (f"nila {Nilai} = A")
-elif Nilai >= 80 : 
-    print (f"nila {Nilai} = B")
-elif Nilai >= 70 : 
-    print (f"nila {Nilai} = C")
-elif Nilai >= 60 : 
-    print (f"nila {Nilai} = D")
-elif Nilai >= 40 : 
-    print (f"nila {Nilai} = E")
-else : 
-    print (f"nila {Nilai} = F")
+try : 
+    Nilai = float(input ("masukan nial : "))
+    if Nilai >= 90 and Nilai <=  100: 
+        print (f"nila {Nilai} = A")
+    elif Nilai >= 80 and Nilai <=  100: 
+        print (f"nila {Nilai} = B")
+    elif Nilai >= 70 and Nilai <=  100: 
+        print (f"nila {Nilai} = C")
+    elif Nilai >= 60 and Nilai <=  100: 
+        print (f"nila {Nilai} = D")
+    elif Nilai >= 40 and Nilai <=  100: 
+        print (f"nila {Nilai} = E")
+    elif Nilai <= 40 and Nilai >= 0 :
+        print (f"nila {Nilai} = F")
+    else : 
+        print ("input tidak valid ")
+except : 
+    print ("inpu error")

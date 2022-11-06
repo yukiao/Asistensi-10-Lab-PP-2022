@@ -1,8 +1,4 @@
-try :
-    def pemakaian ():
-        gol = input ("Golongan : ")
-        daya = float(input ("daya : "))
-        use = float(input ("pemakaian : "))
+def pemakaian (gol,daya,use):
         if gol == "R1" and daya >= 900 and daya < 1300 : 
             if daya == 900:
                 x = use * 1352
@@ -22,8 +18,16 @@ try :
             x = use * 1314.12
         elif gol == "P1" and daya >= 6.600 and daya <= 200000 :
             x = use * 1523.28
-        return (str(x))
-    print (pemakaian())
+        return ((x))
+try :
+    gol = input ("Golongan : ")
+    daya = float(input ("daya : "))
+    use = float(input ("pemakaian : "))
+    using = pemakaian (gol,daya,use)
+    a =  F"{using:_}"
+    a1 = a.replace(".", ",")
+    a2 = a1.replace("_", ".")
+    print (F"jumlah tagihan anda:  {a2}")
 except : 
     print ("Input Tidak Valid")
     
