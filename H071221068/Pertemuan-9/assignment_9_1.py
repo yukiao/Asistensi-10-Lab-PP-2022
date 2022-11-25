@@ -1,8 +1,8 @@
 from assignment_9_Hero import Warrior,Assassin,Support
 
 warrior=Warrior("Ardi", pos_x=10)
-assassin=Assassin("Dani", pos_x=25)
-support=Support("Aya", pos_x=30)
+assassin=Assassin("Mahen", pos_x=25)
+support=Support("Padlan", pos_x=30)
 
 #GET HEALTH (Sebelum)
 print("---Sebelum Impact---")

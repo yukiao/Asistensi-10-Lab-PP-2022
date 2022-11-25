@@ -89,4 +89,4 @@ class Support(Hero) :
         self._speed = 6
         # target._health = target._health + 150
         newHealth = target.getHealth() + 150
-        target.setHealth(newHealth) 
+        target.setHealth(newHealth)
