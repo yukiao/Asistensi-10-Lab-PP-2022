@@ -1,7 +1,0 @@
-+=====================================
-Data yang tersimpan
-+=====================================
-|Nama : Fahri
-|Email : fahri@student.unhas.ac.id
-|Password : Fahri500G
-+=====================================
